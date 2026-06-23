@@ -1,0 +1,5 @@
+# Exclude all .env files in any subdirectory
+**/.env
+
+# Optional: Exclude environmental variants (e.g., .env.local, .env.development)
+**/.env.*
