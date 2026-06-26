@@ -17,5 +17,7 @@ class ReportingService:
         2. Return a JSON string confirming the ticket was created.
         """
         print(f"-> TOOL: Escalating to human with summary: {summary}...")
-        return json.dumps({"status": "success", 
-                           "message": "Ticket created, Escalated to human"})
+        return json.dumps({"status": "success",
+                           "ticket_id": "TKT-123456",
+                           "assigned_to": "IT Support Engineer",
+                           "summary": "Ticket created, Escalated to human"})

@@ -17,5 +17,5 @@ class ServiceHandler:
         Example return: '{"status": "success", "message": "Server restarted successfully"}'
         """
         print(f"-> TOOL: Restarting service {server_id}...")
-        return json.dumps({"status": "success", "message": "Server restarted successfully"})
+        return json.dumps({"status": "success","server_id": server_id, "message": "Server restarted successfully"})
 
